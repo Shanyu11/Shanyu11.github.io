@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BEED — Benchtop Lab Instrument · Shanyu Chauhan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=IBM+Plex+Mono:wght@400;600&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="sheet">
+
+  <header class="titlebar">
+    <div class="name"><a href="../index.html">S. Chauhan</a></div>
+    <div class="cell"><b>Sheet</b>02 — BEED</div>
+    <div class="cell"><b>Rev</b>3</div>
+    <nav>
+      <a href="../index.html">Projects</a>
+      <a href="../index.html#about">About</a>
+      <a href="../assets/Shanyu_Chauhan_Resume.pdf">Resume</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+
+    <div class="projhead">
+      <h1>BEED</h1>
+      <p class="sub">A benchtop lab-automation instrument that consolidates a repetitive multi-machine
+      sample-prep workflow into a single device — a self-directed product build from user research to
+      bench-validated prototype. Design specifics are confidential while a patent filing is prepared.</p>
+      <div class="specline">
+        <span><b>Role:</b> everything — research, design, firmware, electronics, validation</span>
+        <span><b>Timeline:</b> Jun 2026 – present</span>
+        <span><b>Status:</b> Rev 3, bench-validated</span>
+        <span><b>Stack:</b> ESP32 · C++ · SolidWorks · 3D printing</span>
+        <span><b>IP:</b> details confidential · patent filing in preparation</span>
+      </div>
+    </div>
+
+    <div class="dim"><h2>Demo</h2><span class="rule"></span><span class="tag">Rev 3 on the bench</span></div>
+    <figure class="frame">
+      <!-- Replace with: <video src="../images/beed-demo.mp4" controls muted playsinline></video> (exterior footage only until patent is filed) -->
+      <div class="ph" style="min-height:320px">ADD images/beed-demo.mp4 — 20–30 s clip of a full prep cycle, exterior view only (nothing that shows internals until the patent filing is in).</div>
+      <figcaption>Rev 3 running a full prep cycle. [Replace caption with what the clip shows — exterior only.]</figcaption>
+    </figure>
+
+    <div class="dim"><h2>The problem</h2><span class="rule"></span></div>
+    <section class="prose">
+      <p>Preparing a sample in a formulation lab is a multi-instrument workflow: successive prep steps
+      happen on separate machines on different parts of the bench, so scientists physically carry
+      samples back and forth, re-securing and re-monitoring at each step — for every sample, all
+      day.</p>
+      <p>During my internship at Bayer / Vividion Therapeutics, user-discovery interviews with a
+      formulation scientist and lab engineers surfaced how much time this eats.
+      I translated those interviews into design requirements around workflow fit, cost, and
+      buildability — then built the machine.</p>
+      <div class="callout">
+        <span class="k">Objective</span>
+        One device that performs the full prep cycle in place. Projected impact from interviews:
+        eliminates manual machine-swapping and saves a scientist 5+ hours per week of sample-prep time.
+      </div>
+    </section>
+
+    <div class="dim"><h2>Process</h2><span class="rule"></span><span class="tag">3 revisions</span></div>
+    <section class="prose">
+      <p>Each revision changed something I got wrong the time before. That's the point of showing
+      them.</p>
+    </section>
+    <table class="rev">
+      <tr><th>Rev</th><th>What it was</th><th>What I learned / changed</th></tr>
+      <tr><td>Rev 1</td><td>[Describe: e.g., breadboard proof-of-concept — could the ESP32 drive the core subsystems? Keep mechanism-neutral until filing.]</td><td>[e.g., a driver stage was underpowered; thermal issue; describe the finding without naming the mechanism]</td></tr>
+      <tr><td>Rev 2</td><td>[Describe: e.g., integrated electronics + first enclosure]</td><td>[e.g., enclosure geometry vs. drive coupling; cost trade-off you made — mechanism-neutral]</td></tr>
+      <tr><td>Rev 3</td><td>[Describe: current bench-validated build]</td><td>[e.g., what you validated and what rev 4 will change]</td></tr>
+    </table>
+    <div style="height:18px"></div>
+    <div class="mediagrid">
+      <figure class="frame">
+        <div class="ph">ADD images/beed-rev1.jpg<br>breadboard stage (crop out mechanism specifics)</div>
+        <figcaption>Rev 1 — breadboard proof-of-concept.</figcaption>
+      </figure>
+      <figure class="frame">
+        <div class="ph">ADD images/beed-cad.png<br>enclosure CAD, exterior only (SolidWorks)</div>
+        <figcaption>Enclosure design — [call out one deliberate choice].</figcaption>
+      </figure>
+      <figure class="frame">
+        <div class="ph">ADD images/beed-rev3.jpg<br>current build, exterior clean shot</div>
+        <figcaption>Rev 3 — bench-validated build.</figcaption>
+      </figure>
+    </div>
+
+    <div class="dim"><h2>Technical</h2><span class="rule"></span></div>
+    <section class="prose">
+      <ul>
+        <li><b>Control:</b> ESP32 firmware written in C++ — [one sentence: control loop, timing, UI, safety interlocks — whatever is true].</li>
+        <li><b>Electronics:</b> custom breadboarded driver circuits for the actuation subsystems — [add specifics after the filing].</li>
+        <li><b>Mechanical:</b> 3D-printed enclosure modeled in SolidWorks, iterated across three revisions.</li>
+        <li><b>Feasibility:</b> iterated trade-offs between component cost, thermal management, and driver power across revisions.</li>
+      </ul>
+      <p>Firmware and detailed design documentation are private while the patent filing is prepared — happy to walk through both in interviews.</p>
+    </section>
+
+    <div class="dim"><h2>Validation &amp; next</h2><span class="rule"></span></div>
+    <section class="prose">
+      <p>Bench validation covered the performance of both core functions — [one sentence on how you
+      tested: what you measured, against what reference]. Next: [rev 4 plans — e.g., PCB spin,
+      combined duty-cycle testing, pilot use with a real formulation workflow].</p>
+    </section>
+
+    <div class="pager">
+      <a href="../index.html">← All projects</a>
+      <a href="rockets.html">Next: Staged rockets →</a>
+    </div>
+
+  </main>
+
+  <footer class="titlefoot">
+    <div class="cell">Drawn by: S. Chauhan</div>
+    <div class="cell">Sheet 02 — BEED</div>
+    <div class="cell">© 2026</div>
+  </footer>
+
+</div>
+</body>
+</html>
