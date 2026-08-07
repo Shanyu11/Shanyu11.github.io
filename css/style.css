@@ -215,3 +215,8 @@ footer.titlefoot a { color: var(--ink); }
 .pager { display: flex; justify-content: space-between; gap: 16px; margin-top: 48px; font-family: var(--mono); font-size: 13px; }
 .pager a { text-decoration: none; border: 1.5px solid var(--ink); padding: 10px 16px; color: var(--ink); }
 .pager a:hover { box-shadow: 3px 3px 0 var(--accent); }
+
+/* --- CAD library cards ------------------------------------------------------ */
+.pcard .desc { grid-column: 1 / -1; font-family: var(--body); font-size: 14px; line-height: 1.5; color: var(--ink); margin: 2px 0 4px; }
+.media.fit { background: #fff; }
+.media.fit img { object-fit: contain; }
