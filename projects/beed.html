@@ -42,7 +42,7 @@
     <figure class="frame">
       <!-- Replace with: <video src="../images/beed-demo.mp4" controls muted playsinline></video> (exterior footage only until patent is filed) -->
       <div class="ph" style="min-height:320px">ADD images/beed-demo.mp4 — 20–30 s clip of a full prep cycle, exterior view only (nothing that shows internals until the patent filing is in).</div>
-      <figcaption>Rev 3 running a full prep cycle. [Replace caption with what the clip shows — exterior only.]</figcaption>
+      <figcaption>Rev 3 running a full prep cycle (exterior view).</figcaption>
     </figure>
 
     <div class="dim"><h2>The problem</h2><span class="rule"></span></div>
@@ -69,9 +69,9 @@
     </section>
     <table class="rev">
       <tr><th>Rev</th><th>What it was</th><th>What I learned / changed</th></tr>
-      <tr><td>Rev 1</td><td>[Describe: e.g., breadboard proof-of-concept — could the ESP32 drive the core subsystems? Keep mechanism-neutral until filing.]</td><td>[e.g., a driver stage was underpowered; thermal issue; describe the finding without naming the mechanism]</td></tr>
-      <tr><td>Rev 2</td><td>[Describe: e.g., integrated electronics + first enclosure]</td><td>[e.g., enclosure geometry vs. drive coupling; cost trade-off you made — mechanism-neutral]</td></tr>
-      <tr><td>Rev 3</td><td>[Describe: current bench-validated build]</td><td>[e.g., what you validated and what rev 4 will change]</td></tr>
+      <tr><td>Rev 1</td><td>Breadboard proof of concept — ESP32 control firmware (C++) driving first-pass breadboarded driver electronics.</td><td>Validated the end-to-end control approach and set requirements for the integrated Rev 2 electronics.</td></tr>
+      <tr><td>Rev 2</td><td>Integrated electronics with the first 3D-printed enclosure, modeled in SolidWorks.</td><td>Refined enclosure geometry and packaging; iterated cost, thermal, and driver-power trade-offs.</td></tr>
+      <tr><td>Rev 3</td><td>Current build — bench-validated across the full prep cycle.</td><td>Validated both core functions on the bench; Rev 4 targets pilot use in a real formulation workflow.</td></tr>
     </table>
     <div style="height:18px"></div>
     <div class="mediagrid">
@@ -81,7 +81,7 @@
       </figure>
       <figure class="frame">
         <div class="ph">ADD images/beed-cad.png<br>enclosure CAD, exterior only (SolidWorks)</div>
-        <figcaption>Enclosure design — [call out one deliberate choice].</figcaption>
+        <figcaption>Enclosure design — 3D-printed, modeled in SolidWorks.</figcaption>
       </figure>
       <figure class="frame">
         <div class="ph">ADD images/beed-rev3.jpg<br>current build, exterior clean shot</div>
@@ -92,8 +92,8 @@
     <div class="dim"><h2>Technical</h2><span class="rule"></span></div>
     <section class="prose">
       <ul>
-        <li><b>Control:</b> ESP32 firmware written in C++ — [one sentence: control loop, timing, UI, safety interlocks — whatever is true].</li>
-        <li><b>Electronics:</b> custom breadboarded driver circuits for the actuation subsystems — [add specifics after the filing].</li>
+        <li><b>Control:</b> ESP32 firmware written in C++ that sequences the full prep cycle end to end.</li>
+        <li><b>Electronics:</b> custom breadboarded driver circuits for the actuation subsystems — circuit specifics to follow after the patent filing.</li>
         <li><b>Mechanical:</b> 3D-printed enclosure modeled in SolidWorks, iterated across three revisions.</li>
         <li><b>Feasibility:</b> iterated trade-offs between component cost, thermal management, and driver power across revisions.</li>
       </ul>
@@ -102,9 +102,9 @@
 
     <div class="dim"><h2>Validation &amp; next</h2><span class="rule"></span></div>
     <section class="prose">
-      <p>Bench validation covered the performance of both core functions — [one sentence on how you
-      tested: what you measured, against what reference]. Next: [rev 4 plans — e.g., PCB spin,
-      combined duty-cycle testing, pilot use with a real formulation workflow].</p>
+      <p>Bench validation covered the performance of both core functions against the standalone
+      equipment the device replaces. Next: continued duty-cycle testing and pilot use inside a real
+      formulation workflow.</p>
     </section>
 
     <div class="pager">
