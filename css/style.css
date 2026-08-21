@@ -91,6 +91,9 @@ a:hover { color: var(--accent); }
   text-transform: uppercase;
 }
 .hero h1 .accent { color: var(--accent); }
+.hero .intro { max-width: 680px; margin-bottom: 8px; }
+.hero .intro p { margin: 0 0 12px; }
+.hero .intro .links { font-family: var(--mono); font-size: 13px; }
 .hero .lede { font-size: clamp(17px, 2.2vw, 20px); max-width: 640px; color: var(--ink); margin: 0 0 14px; }
 .hero .currently {
   font-family: var(--mono); font-size: 13px; color: var(--muted);
