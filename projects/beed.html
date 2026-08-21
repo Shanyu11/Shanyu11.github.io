@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BEED — Benchtop Lab Instrument · Shanyu Chauhan</title>
+<title>BEED, Benchtop Lab Instrument · Shanyu Chauhan</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=IBM+Plex+Mono:wght@400;600&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
@@ -13,7 +13,7 @@
 
   <header class="titlebar">
     <div class="name"><a href="../index.html">S. Chauhan</a></div>
-    <div class="cell"><b>Sheet</b>02 — BEED</div>
+    <div class="cell"><b>Sheet</b>02 · BEED</div>
     <div class="cell"><b>Rev</b>3</div>
     <nav>
       <a href="../index.html">Projects</a>
@@ -26,69 +26,58 @@
 
     <div class="projhead">
       <h1>BEED</h1>
-      <p class="sub">A benchtop lab-automation instrument that consolidates a repetitive multi-machine
-      sample-prep workflow into a single device — a self-directed product build from user research to
-      bench-validated prototype. Design specifics are confidential while a patent filing is prepared.</p>
+      <p class="sub">A benchtop instrument that does a multi-machine sample prep workflow in one
+      device. I built it myself, from user interviews to a bench-tested prototype. Design details
+      are confidential until the patent is filed.</p>
       <div class="specline">
-        <span><b>Role:</b> everything — research, design, firmware, electronics, validation</span>
-        <span><b>Timeline:</b> Jun 2026 – present</span>
-        <span><b>Status:</b> Rev 3, bench-validated</span>
-        <span><b>Stack:</b> ESP32 · C++ · SolidWorks · 3D printing</span>
-        <span><b>IP:</b> details confidential · patent filing in preparation</span>
+        <span><b>Timeline:</b> Jun 2026 to present</span>
+        <span><b>Tools:</b> ESP32 · C++ · SolidWorks · 3D printing</span>
       </div>
     </div>
 
-    <div class="dim"><h2>Demo</h2><span class="rule"></span><span class="tag">Rev 3 on the bench</span></div>
+    <div class="dim"><h2>Demo</h2><span class="rule"></span><span class="tag">Rev 3</span></div>
     <figure class="frame">
-      <div class="wip"><span class="stamp">Work in progress</span><span class="note">Photos, demo video, and CAD are withheld until the patent filing is complete. A live demo is available in interviews.</span></div>
-      <figcaption>Rev 3 on the bench — media to be published after filing.</figcaption>
+      <div class="wip"><span class="stamp">Work in progress</span><span class="note">Photos, video, and CAD will be posted after the patent filing. I can demo it live in an interview.</span></div>
+      <figcaption>Rev 3 on the bench.</figcaption>
     </figure>
 
     <div class="dim"><h2>The problem</h2><span class="rule"></span></div>
     <section class="prose">
-      <p>Preparing a sample in a formulation lab is a multi-instrument workflow: successive prep steps
-      happen on separate machines on different parts of the bench, so scientists physically carry
-      samples back and forth, re-securing and re-monitoring at each step — for every sample, all
-      day.</p>
-      <p>During my internship at Bayer / Vividion Therapeutics, user-discovery interviews with a
-      formulation scientist and lab engineers surfaced how much time this eats.
-      I translated those interviews into design requirements around workflow fit, cost, and
-      buildability — then built the machine.</p>
+      <p>Sample prep in a formulation lab runs across several machines. Scientists carry samples
+      from one to the next, re-secure them, and watch each step, all day.</p>
+      <p>During my internship at Bayer / Vividion Therapeutics I interviewed a formulation scientist
+      and lab engineers about this. I turned what they told me into requirements for workflow fit,
+      cost, and buildability, then built the machine.</p>
       <div class="callout">
-        <span class="k">Objective</span>
-        One device that performs the full prep cycle in place. Projected impact from interviews:
-        eliminates manual machine-swapping and saves a scientist 5+ hours per week of sample-prep time.
+        <span class="k">Goal</span>
+        One device that runs the full prep cycle in place. Based on the interviews, it removes the
+        machine swapping and saves a scientist 5+ hours a week.
       </div>
     </section>
 
     <div class="dim"><h2>Process</h2><span class="rule"></span><span class="tag">3 revisions</span></div>
-    <section class="prose">
-      <p>Each revision changed something I got wrong the time before. That's the point of showing
-      them.</p>
-    </section>
     <table class="rev">
-      <tr><th>Rev</th><th>What it was</th><th>What I learned / changed</th></tr>
-      <tr><td>Rev 1</td><td>Breadboard proof of concept — ESP32 control firmware (C++) driving first-pass breadboarded driver electronics.</td><td>Validated the end-to-end control approach and set requirements for the integrated Rev 2 electronics.</td></tr>
-      <tr><td>Rev 2</td><td>Integrated electronics with the first 3D-printed enclosure, modeled in SolidWorks.</td><td>Refined enclosure geometry and packaging; iterated cost, thermal, and driver-power trade-offs.</td></tr>
-      <tr><td>Rev 3</td><td>Current build — bench-validated across the full prep cycle.</td><td>Validated both core functions on the bench; Rev 4 targets pilot use in a real formulation workflow.</td></tr>
+      <tr><th>Rev</th><th>What it was</th><th>What changed</th></tr>
+      <tr><td>Rev 1</td><td>Breadboard proof of concept. ESP32 firmware in C++ driving first-pass driver electronics.</td><td>Proved the control approach and set the requirements for Rev 2.</td></tr>
+      <tr><td>Rev 2</td><td>Integrated electronics in the first 3D-printed enclosure, modeled in SolidWorks.</td><td>Fixed enclosure geometry and packaging. Worked through cost, heat, and driver power trade-offs.</td></tr>
+      <tr><td>Rev 3</td><td>Current build, tested on the bench across the full prep cycle.</td><td>Both core functions work. Rev 4 goes into a real formulation workflow.</td></tr>
     </table>
 
     <div class="dim"><h2>Technical</h2><span class="rule"></span></div>
     <section class="prose">
       <ul>
-        <li><b>Control:</b> ESP32 firmware written in C++ that sequences the full prep cycle end to end.</li>
-        <li><b>Electronics:</b> custom breadboarded driver circuits for the actuation subsystems — circuit specifics to follow after the patent filing.</li>
-        <li><b>Mechanical:</b> 3D-printed enclosure modeled in SolidWorks, iterated across three revisions.</li>
-        <li><b>Feasibility:</b> iterated trade-offs between component cost, thermal management, and driver power across revisions.</li>
+        <li><b>Control:</b> ESP32 firmware in C++ that sequences the full prep cycle.</li>
+        <li><b>Electronics:</b> custom driver circuits for the actuation subsystems.</li>
+        <li><b>Mechanical:</b> 3D-printed enclosure modeled in SolidWorks, three revisions.</li>
+        <li><b>Trade-offs:</b> component cost, heat, and driver power.</li>
       </ul>
-      <p>Firmware and detailed design documentation are private while the patent filing is prepared — happy to walk through both in interviews.</p>
+      <p>Firmware and design documents stay private until the patent is filed. I can walk through both in an interview.</p>
     </section>
 
-    <div class="dim"><h2>Validation &amp; next</h2><span class="rule"></span></div>
+    <div class="dim"><h2>Validation and next</h2><span class="rule"></span></div>
     <section class="prose">
-      <p>Bench validation covered the performance of both core functions against the standalone
-      equipment the device replaces. Next: continued duty-cycle testing and pilot use inside a real
-      formulation workflow.</p>
+      <p>Bench tests compared both core functions against the standalone equipment the device
+      replaces. Next: duty-cycle testing and a pilot in a real formulation workflow.</p>
     </section>
 
     <div class="pager">
@@ -100,7 +89,7 @@
 
   <footer class="titlefoot">
     <div class="cell">Drawn by: S. Chauhan</div>
-    <div class="cell">Sheet 02 — BEED</div>
+    <div class="cell">Sheet 02: BEED</div>
     <div class="cell">© 2026</div>
   </footer>
 
