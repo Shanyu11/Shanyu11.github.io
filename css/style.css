@@ -166,7 +166,7 @@ a:hover { color: var(--accent); }
 figure { margin: 0; }
 figure.frame { border: 1.5px solid var(--ink); }
 figure.frame img, figure.frame video { width: 100%; display: block; }
-figure.frame video.portrait { width: auto; max-width: 100%; max-height: 560px; margin: 0 auto; background: #111; }
+figure.frame video.portrait { width: auto; max-width: 100%; max-height: 400px; margin: 0 auto; background: #111; }
 figcaption {
   font-family: var(--mono); font-size: 12px; color: var(--muted);
   border-top: 1px solid var(--line); padding: 8px 12px;
@@ -225,4 +225,20 @@ footer.titlefoot a { color: var(--ink); }
 /* --- CAD library cards ------------------------------------------------------ */
 .pcard .desc { grid-column: 1 / -1; font-family: var(--body); font-size: 14px; line-height: 1.5; color: var(--ink); margin: 2px 0 4px; }
 .media.fit { background: #fff; }
+/* Withheld / text tiles (no photo available) */
+.wip, .tile {
+  background-color: var(--paper);
+  background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 24px 24px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+  gap: 10px; padding: 24px; min-height: 180px;
+  font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; color: var(--muted);
+}
+.wip .stamp { border: 2px solid var(--ink); color: var(--ink); font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em; padding: 7px 14px; transform: rotate(-3deg); }
+.wip .note { max-width: 46ch; line-height: 1.5; letter-spacing: 0.02em; }
+.tile .big { font-family: var(--display); font-weight: 900; font-size: 44px; line-height: 1; color: var(--ink); letter-spacing: -0.01em; }
+.tile .sub { text-transform: uppercase; letter-spacing: 0.12em; font-size: 11px; }
+.media .wip, .media .tile { position: absolute; inset: 0; min-height: 0; }
+.media .tile .big { font-size: 40px; }
+figure.frame .wip { min-height: 260px; }
 .media.fit img { object-fit: contain; }
