@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Automated Benchtop Lab Instrument · Shanyu Chauhan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=IBM+Plex+Mono:wght@400;600&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="sheet">
+
+  <header class="titlebar">
+    <div class="name"><a href="../index.html">S. Chauhan</a></div>
+    <div class="cell"><b>Sheet</b>02 · Instrument</div>
+    <div class="cell"><b>Rev</b>3</div>
+    <nav>
+      <a href="../index.html">Projects</a>
+      <a href="../index.html#about">About</a>
+      <a href="../assets/Shanyu_Chauhan_Resume.pdf">Resume</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+
+    <div class="projhead">
+      <h1>Automated Benchtop<br>Lab Instrument</h1>
+      <p class="sub">A benchtop instrument that automates a routine lab workflow in one device.
+      Built from user interviews to a bench-tested prototype. What it does is confidential until
+      the patent is filed.</p>
+      <div class="specline">
+        <span><b>Timeline:</b> Jun 2026 to present</span>
+        <span><b>Tools:</b> ESP32 · C++ · SolidWorks · 3D printing</span>
+      </div>
+    </div>
+
+    <div class="dim"><h2>Demo</h2><span class="rule"></span><span class="tag">Rev 3</span></div>
+    <figure class="frame">
+      <div class="wip"><span class="stamp">Work in progress</span><span class="note">Photos, video, and CAD will be posted after the patent filing. I can demo it live in an interview.</span></div>
+      <figcaption>Rev 3 on the bench.</figcaption>
+    </figure>
+
+    <div class="dim"><h2>Problem and result</h2><span class="rule"></span></div>
+    <section class="prose">
+      <p>A routine lab workflow runs across several machines, with manual handling between every
+      step. During my internship at Bayer / Vividion Therapeutics I interviewed a scientist and lab
+      engineers about it, turned that into requirements for workflow fit, cost, and buildability,
+      and built the instrument.</p>
+      <div class="callout">
+        <span class="k">Result</span>
+        One device that runs the whole workflow in place. Bench tests matched the standalone
+        equipment it replaces. Projected to save a scientist 5+ hours a week.
+      </div>
+    </section>
+
+    <div class="dim"><h2>Revisions</h2><span class="rule"></span><span class="tag">3</span></div>
+    <table class="rev">
+      <tr><th>Rev</th><th>What it was</th><th>What changed</th></tr>
+      <tr><td>Rev 1</td><td>Breadboard proof of concept. ESP32 firmware in C++ driving first-pass driver electronics.</td><td>Proved the control approach and set the requirements for Rev 2.</td></tr>
+      <tr><td>Rev 2</td><td>Integrated electronics in the first 3D-printed enclosure, modeled in SolidWorks.</td><td>Fixed enclosure geometry and packaging. Worked through cost, heat, and driver power.</td></tr>
+      <tr><td>Rev 3</td><td>Current build, tested on the bench across the full cycle.</td><td>Both core functions work. Rev 4 goes into a real lab workflow.</td></tr>
+    </table>
+
+    <div class="dim"><h2>Technical</h2><span class="rule"></span></div>
+    <section class="prose">
+      <ul>
+        <li><b>Control:</b> ESP32 firmware in C++ that sequences the full cycle.</li>
+        <li><b>Electronics:</b> custom driver circuits for the actuation subsystems.</li>
+        <li><b>Mechanical:</b> 3D-printed enclosure modeled in SolidWorks, three revisions.</li>
+      </ul>
+      <p>Firmware and design documents stay private until the patent is filed.</p>
+    </section>
+
+    <div class="pager">
+      <a href="../index.html">← All projects</a>
+      <a href="rockets.html">Next: Staged rockets →</a>
+    </div>
+
+  </main>
+
+  <footer class="titlefoot">
+    <div class="cell">Drawn by: S. Chauhan</div>
+    <div class="cell">Sheet 02: Instrument</div>
+    <div class="cell">© 2026</div>
+  </footer>
+
+</div>
+</body>
+</html>
