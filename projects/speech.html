@@ -26,28 +26,29 @@
 
     <div class="projhead">
       <h1>Robot Interpretation<br>of Human Speech</h1>
-      <p class="sub">Co-authored research with a group at the University of Oxford. Do household
-      robots still do the right thing when the same command is phrased differently?</p>
+      <p class="sub">Research with a group at the University of Oxford. The question: if you give a
+      household robot the same instruction in different words, does it still do the right thing?</p>
       <div class="specline">
         <span><b>Timeline:</b> Oct 2025 to present</span>
-        <span><b>Tools:</b> Python · PARTNR Planner simulator</span>
+        <span><b>Tools:</b> Python · PARTNR Planner (a household robot simulator from Meta)</span>
       </div>
     </div>
 
-    <div class="dim"><h2>Problem and result</h2><span class="rule"></span></div>
+    <div class="dim"><h2>Objective</h2><span class="rule"></span></div>
     <section class="prose">
-      <p>People phrase instructions however they like. A robot simulator (PARTNR Planner) ran 4,670
-      household-chore instructions across 17 framing types, 1 neutral baseline and 16 variants, to
-      measure how task success changes with the phrasing. My part: data validation, statistical
-      analysis of task-success rates, iteration on the framings, and the figures.</p>
-      <div class="callout">
-        <span class="k">Result</span>
-        Paper submitted to TACL. Results are held until publication.
-      </div>
+      <p>People word instructions however they like, so a voice-controlled robot has to handle many
+      phrasings of the same request. We tested this in PARTNR Planner, a simulator where a robot
+      and a virtual human do household chores together. The robot was given 4,670 instructions
+      written in 17 different framings: one plain baseline and 16 variations in wording. For each
+      one we recorded whether the robot completed the task. My part was validating the data,
+      running the statistical analysis of task-success rates, refining the framings, and making
+      the figures. The paper is submitted to TACL (Transactions of the Association for
+      Computational Linguistics), a peer-reviewed journal, and the results are held until it is
+      published.</p>
     </section>
     <figure class="frame">
       <video src="../images/speech-sim.mp4" controls muted loop playsinline preload="metadata"></video>
-      <figcaption>PARTNR Planner environment. A robot and a simulated human carry out a framed instruction.</figcaption>
+      <figcaption>The PARTNR Planner simulator. The robot (left) and the virtual human (right) each carry out their part of an instruction.</figcaption>
     </figure>
 
     <div class="pager">
