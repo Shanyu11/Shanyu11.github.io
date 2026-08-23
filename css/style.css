@@ -65,7 +65,7 @@ a:hover { color: var(--accent); }
 .titlebar .cell { border-right: 1px solid var(--line); color: var(--muted); }
 .titlebar .cell b { color: var(--ink); font-weight: 600; display: block; text-transform: uppercase; font-size: 10px; letter-spacing: 0.12em; }
 .titlebar .name {
-  font-family: var(--display); font-weight: 800; font-size: 15px;
+  font-family: var(--display); font-weight: 900; font-size: 22px;
   letter-spacing: 0.02em; text-transform: uppercase; color: var(--ink);
   border-right: 1px solid var(--line); display: flex; align-items: center;
 }
@@ -134,7 +134,7 @@ a:hover { color: var(--accent); }
   content: ""; position: absolute; top: -4px; width: 1px; height: 9px; background: var(--ink);
 }
 .dim .rule::before { left: 0; } .dim .rule::after { right: 0; }
-.dim .tag { font-family: var(--mono); font-size: 11px; color: var(--muted); letter-spacing: 0.08em; }
+.dim .tag { font-family: var(--mono); font-size: 15px; font-weight: 600; color: var(--muted); letter-spacing: 0.08em; }
 
 /* --- project index cards (title-block style) ------------------------------ */
 .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
