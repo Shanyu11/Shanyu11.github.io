@@ -174,7 +174,7 @@ figure.frame img, figure.frame video { width: 100%; display: block; }
 figure.frame video.portrait { width: auto; max-width: 100%; max-height: 400px; margin: 0 auto; background: #111; }
 figcaption {
   font-family: var(--mono); font-size: 12px; color: var(--muted);
-  border-top: 1px solid var(--line); padding: 8px 12px;
+  border-top: 1px solid var(--line); padding: 8px 12px; margin-top: 12px;
 }
 .mediagrid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
 .mediagrid.two { grid-template-columns: 1fr 1fr; }
