@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G-Class Single Stage Rocket · Shanyu Chauhan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=IBM+Plex+Mono:wght@400;600&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="sheet">
+
+  <header class="titlebar">
+    <div class="name"><a href="../index.html">Shanyu Chauhan</a></div>
+    <nav>
+      <a href="../index.html">Projects</a>
+      <a href="../assets/Shanyu_Chauhan_Resume.pdf">Resume</a>
+      <a href="https://www.linkedin.com/in/shanyu-chauhan">LinkedIn</a>
+      <a href="https://github.com/Shanyu11">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+
+    <div class="projhead">
+      <h1>G-Class Single Stage Rocket</h1>
+      <p class="sub">A 24.21 in long, 1.6 in diameter rocket on a G-class motor. Designed, simulated,
+      and programmed end to end, then flown at the Friends of Amateur Rocketry site in the Mojave
+      Desert. It reached 800 ft/s and was recovered with its flight electronics intact.</p>
+      <div class="specline">
+        <span><b>Role:</b> Design, simulation &amp; avionics</span>
+        <span><b>Team:</b> UCSD Rocket Propulsion Laboratory</span>
+        <span><b>Tools:</b> OpenRocket · MATLAB · SolidWorks · ESP32</span>
+        <span><b>Status:</b> Flown and recovered</span>
+      </div>
+    </div>
+
+    <div class="specstrip">
+      <div class="spec"><div class="val">800 ft/s</div><div class="lbl">Top speed, measured</div></div>
+      <div class="spec"><div class="val">24.21 in</div><div class="lbl">Vehicle length</div></div>
+      <div class="spec"><div class="val">1.6 in</div><div class="lbl">Body diameter</div></div>
+      <div class="spec"><div class="val">G80T</div><div class="lbl">Motor</div></div>
+    </div>
+
+    <div class="dim"><h2>Flight</h2><span class="rule"></span></div>
+    <div class="mediagrid two">
+      <figure class="frame">
+        <video class="portrait" src="../images/gclass-launch.mp4" poster="../images/gclass-launch-poster.jpg" controls muted playsinline preload="metadata"></video>
+        <figcaption>Launch at Friends of Amateur Rocketry, Mojave Desert.</figcaption>
+      </figure>
+      <figure class="frame">
+        <img src="../images/gclass-bench.jpg" alt="The rocket on the bench before flight">
+        <figcaption>The rocket before flight. 24.21 in long, 1.6 in diameter.</figcaption>
+      </figure>
+    </div>
+
+    <section class="prose">
+      <p>A G-class motor is a hobby rocket motor class with roughly 80 to 160 newton seconds of
+      total impulse. The flight was simulated in OpenRocket and MATLAB before launch. The rocket
+      reached 800 ft/s and was recovered with its flight electronics intact.</p>
+    </section>
+
+    <div class="dim"><h2>Simulation</h2><span class="rule"></span></div>
+    <figure class="frame" style="max-width: 680px;">
+      <img src="../images/gclass-openrocket.png" alt="OpenRocket simulation of the single stage rocket" style="background:#fff;padding:10px 14px">
+      <figcaption>OpenRocket simulation of the flight. Predicted apogee 4,104 ft and top speed 868 ft/s on a G80T motor.</figcaption>
+    </figure>
+    <div style="height:16px"></div>
+    <div class="mediagrid two">
+      <figure class="frame">
+        <img src="../images/gclass-cfd.jpg" alt="Airflow simulation around the rocket">
+        <figcaption>Airflow simulation in SolidWorks. Pressure (top) and velocity (bottom) around the rocket.</figcaption>
+      </figure>
+      <figure class="frame">
+        <img src="../images/gclass-avionics.png" alt="Flight electronics schematic" style="background:#fff">
+        <figcaption>Flight electronics schematic. An ESP32 microcontroller reads a BMP388 barometer and an LSM6DSOXTR motion sensor.</figcaption>
+      </figure>
+    </div>
+
+    <div class="dim"><h2>Design</h2><span class="rule"></span></div>
+    <div class="mediagrid two">
+      <figure class="frame">
+        <img src="../images/gclass-fincan.png" class="render" style="background:#292929" alt="Fin can CAD model">
+        <figcaption>Fin can (the tail section that holds the fins). Four swept fins on a slip fit tube.</figcaption>
+      </figure>
+      <figure class="frame">
+        <img src="../images/gclass-nosecone.png" class="render" style="background:#292929" alt="Nose cone CAD model">
+        <figcaption>Nose cone sized to the 1.6 in body tube.</figcaption>
+      </figure>
+    </div>
+
+    <div class="pager">
+      <a href="rockets.html">← Osiris</a>
+      <a href="speech.html">Next: Speech research →</a>
+    </div>
+
+  </main>
+
+  <footer class="titlefoot">
+    <div class="cell">© 2026 Shanyu Chauhan</div>
+    <div class="cell"><a href="mailto:shchauhan@ucsd.edu">shchauhan@ucsd.edu</a></div>
+  </footer>
+
+</div>
+</body>
+</html>
