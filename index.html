@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shanyu Chauhan, Mechanical Engineering</title>
-<meta name="description" content="Mechanical engineering at UC San Diego. Robotics, rockets, and lab hardware.">
+<title>Shanyu Chauhan — Mechanical Engineering</title>
+<meta name="description" content="Mechanical engineering @ UC San Diego — robotics, rockets, and lab hardware. Project portfolio.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=IBM+Plex+Mono:wght@400;600&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -16,55 +16,65 @@
     <div class="name"><a href="index.html">Shanyu Chauhan</a></div>
     <nav>
       <a href="index.html" aria-current="page">Projects</a>
+      <a href="#about">About</a>
       <a href="assets/Shanyu_Chauhan_Resume.pdf">Resume</a>
-      <a href="https://www.linkedin.com/in/shanyu-chauhan">LinkedIn</a>
-      <a href="https://github.com/Shanyu11">GitHub</a>
+      <a href="https://linkedin.com/in/shanyu-chauhan">LinkedIn</a>
     </nav>
   </header>
 
   <main class="wrap">
 
-    <section class="hero" id="about">
-      <h1>I build robots, rockets,<br>and machines that solve<br>real world problems</h1>
-      <p class="lede">B.S. Mechanical Engineering with a Specialization in Robotics and Controls<br>UC San Diego</p>
+    <section class="hero">
+      <h1>I build hardware<br>end to end<span class="accent">.</span></h1>
+      <p class="lede">Mechanical engineering (robotics &amp; controls) + human biology @ UC San Diego.
+      I design, prototype, and validate real machines — staged rockets, competition robots, and a
+      self-directed lab instrument taken from user research to bench-validated prototype.</p>
+      <div class="specstrip" aria-label="Selected measured results">
+        <div class="spec"><div class="val">1877 ft</div><div class="lbl">Osiris apogee, measured</div></div>
+        <div class="spec"><div class="val">5+ hrs/wk</div><div class="lbl">Lab time saved (projected)</div></div>
+        <div class="spec"><div class="val">4,670</div><div class="lbl">Robot instructions analyzed</div></div>
+        <div class="spec"><div class="val">12,000+</div><div class="lbl">Trial data lines automated</div></div>
+      </div>
     </section>
 
-    <div class="dim"><h2>Projects</h2><span class="rule"></span><span class="tag">05 projects</span></div>
+    <div class="dim"><h2>Projects</h2><span class="rule"></span><span class="tag">05 documented builds</span></div>
 
     <section class="grid">
 
-      <a class="pcard" href="projects/instrument.html">
+      <a class="pcard" href="projects/beed.html">
         <div class="media">
-          <div class="wip"><span class="stamp">Work in progress</span><span class="note">Images withheld until patent filing</span></div>
+          <!-- Replace this placeholder with: <img src="images/beed-hero.jpg" alt="BEED prototype on the bench"> (exterior shot only until patent is filed) -->
+          <div class="ph">ADD images/beed-hero.jpg<br>best exterior photo of the working prototype</div>
         </div>
         <div class="block">
-          <h3>Drug Discovery Optimization Machine</h3>
-          <div class="desc">A machine that automates a routine lab task that today takes several pieces of equipment and manual handling. Built alone, from interviews with scientists to a working prototype.</div>
-          <div class="meta">Personal project · 2026</div>
+          <h3>BEED — Benchtop Lab Automation Instrument</h3>
+          <div class="meta">Self-directed product build · 2026</div>
+          <div class="status">Rev 3 · bench-validated</div>
           <div class="card-cta">View project →</div>
         </div>
       </a>
 
       <a class="pcard" href="projects/rockets.html">
         <div class="media">
-          <img src="images/rocket-hero.jpg" alt="G class rocket on the bench before flight">
+          <img src="images/rocket-fins-cad.png" alt="Osiris — 9.4 ft staged rocket, fin-can section">
         </div>
         <div class="block">
-          <h3>Staged Rockets</h3>
-          <div class="desc">A two stage rocket that separates in flight, and a smaller single stage rocket that reached 800 ft/s.</div>
-          <div class="meta">UCSD Rocket Propulsion Laboratory · 2025 to present</div>
+          <h3>Osiris — UCSD RPL</h3>
+          <div class="meta">Rocket engineer · Oct 2026</div>
+          <div class="status">Flown · 1877 ft</div>
           <div class="card-cta">View project →</div>
         </div>
       </a>
 
       <a class="pcard" href="projects/speech.html">
         <div class="media">
-          <img src="images/speech-hero.jpg" alt="PARTNR simulator, robot and human executing a framed instruction">
+          <!-- Replace with: <img src="images/speech-hero.png" alt="Results figure from the paper"> -->
+          <div class="ph">ADD images/speech-hero.png<br>your strongest results figure</div>
         </div>
         <div class="block">
           <h3>Robot Interpretation of Human Speech</h3>
-          <div class="desc">Paper submitted to TACL, an MIT Press journal. A simulation study of whether a household robot still does the right thing when a command is worded differently.</div>
-          <div class="meta">University of Oxford · 2025 to present</div>
+          <div class="meta">Co-authored research · Oxford · 2025</div>
+          <div class="status">Submitted · TACL</div>
           <div class="card-cta">View project →</div>
         </div>
       </a>
@@ -75,24 +85,44 @@
         </div>
         <div class="block">
           <h3>CAD Mechanism Library</h3>
-          <div class="desc">Six robot mechanisms from high school robotics competitions, with 3D models you can open in the browser.</div>
-          <div class="meta">FIRST Tech Challenge, Team Innov8rz · 2020 to 2023</div>
+          <div class="meta">FTC Team Innov8rz &middot; 2020&ndash;23</div>
+          <div class="status">6 mechanisms</div>
           <div class="card-cta">View project →</div>
         </div>
       </a>
 
       <a class="pcard" href="projects/robotics.html">
         <div class="media">
-          <img src="images/robot-iso.png" alt="42 mm launcher assembly CAD render">
+          <!-- Replace with: <img src="images/robot-hero.jpg" alt="RoboMaster robot"> -->
+          <div class="ph">ADD images/robot-hero.jpg<br>robot at competition or CAD render</div>
         </div>
         <div class="block">
           <h3>RoboMaster Combat Robot</h3>
-          <div class="desc">Redesigned the projectile launcher and suspension of a competition robot for UC San Diego's team.</div>
-          <div class="meta">Triton Robotics · 2025</div>
+          <div class="meta">Mechanical engineer · Triton Robotics · 2025</div>
+          <div class="status">Competed</div>
           <div class="card-cta">View project →</div>
         </div>
       </a>
 
+    </section>
+
+    <div class="dim" id="about"><h2>About</h2><span class="rule"></span><span class="tag">Shanyu Chauhan</span></div>
+
+    <section class="prose">
+      <p>I'm a mechanical engineering student at UC San Diego specializing in robotics and controls,
+      with a second degree in human biology — which is why my projects keep landing where machines
+      meet medicine: lab automation, clinical data tooling, and medical device work.</p>
+      <p>I like owning the whole build. On BEED that meant doing the user interviews, defining the
+      requirements, writing the firmware, breadboarding the electronics, modeling the enclosure, and
+      running the bench validation myself. On the rocket team it means designing mechanisms that
+      fly or very visibly don't.</p>
+      <p>Experience: data engineering intern at Bayer / Vividion Therapeutics (clinical trial
+      automation, current), AI engineering intern at Merantis (multimodal ML for medical device
+      compliance), and a research summer in AI/ML and NLP at the University of Oxford.</p>
+      <p><a href="assets/Shanyu_Chauhan_Resume.pdf">Resume (PDF)</a> ·
+         <a href="https://linkedin.com/in/shanyu-chauhan">LinkedIn</a> ·
+         <a href="https://github.com/Shanyu11">GitHub</a> ·
+         <a href="mailto:shchauhan@ucsd.edu">shchauhan@ucsd.edu</a></p>
     </section>
 
   </main>
